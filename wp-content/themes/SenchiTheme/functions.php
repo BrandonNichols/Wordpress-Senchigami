@@ -16,6 +16,7 @@ if (!function_exists('pixiefreak_styles')) {
         wp_enqueue_style('lightboxgallery', $template_dir .'/assets/css/lightboxgallery-min.css', [], $css_version);
         wp_enqueue_style('jquery-bracket', $template_dir .'/assets/css/jquery.bracket.min.css', [], $css_version);
         wp_enqueue_style('jquery-scrollbar', $template_dir .'/assets/css/jquery.scrollbar.css', [], $css_version);
+        wp_enqueue_style('test-style', $template_dir . '/dist/app.css', [], $css_version);
 
         // Google fonts
         $pixiefreak_google_fonts = function() {
