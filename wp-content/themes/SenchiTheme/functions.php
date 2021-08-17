@@ -16,23 +16,34 @@ if (!function_exists('pixiefreak_styles')) {
         wp_enqueue_style('lightboxgallery', $template_dir .'/assets/css/lightboxgallery-min.css', [], $css_version);
         wp_enqueue_style('jquery-bracket', $template_dir .'/assets/css/jquery.bracket.min.css', [], $css_version);
         wp_enqueue_style('jquery-scrollbar', $template_dir .'/assets/css/jquery.scrollbar.css', [], $css_version);
-        wp_enqueue_style('test-style', $template_dir . '/dist/app.css', [], $css_version);
+        wp_enqueue_style('senchigami-style', $template_dir .'/dist/app.css', [], $css_version);
 
         // Google fonts
-        $pixiefreak_google_fonts = function() {
-            $font_url = '';
-            if ('off' !== _x('on', 'Google font: on or off', 'pixiefreak')) {
-                $font_url = add_query_arg(
-                    'family',
-                    urlencode('Montserrat:300,400,500,700,900'),
-                    '//fonts.googleapis.com/css'
-                );
-            }
+        // $pixiefreak_google_fonts = function() {
+        //     $font_url = '';
+        //     if ('off' !== _x('on', 'Google font: on or off', 'pixiefreak')) {
+        //         $font_url = add_query_arg(
+        //             'family',
+        //             urlencode('Montserrat:300,400,500,700,900'),
+        //             '//fonts.googleapis.com/css'
+        //         );
+        //     }
+
+        //     return $font_url;
+        // };
+
+        $header_roboto_condensed = function() {
+            $font_url = add_query_arg(
+                'family',
+                urlencode('Roboto:700'),
+                '//fonts.googleapis.com/css'
+            );
 
             return $font_url;
-        };
+        };  
 
-        wp_enqueue_style('google-fonts', $pixiefreak_google_fonts(), [], $css_version);
+        // wp_enqueue_style('google-fonts', $pixiefreak_google_fonts(), [], $css_version);
+        wp_enqueue_style('roboto-condensed-fonts', $header_roboto_condensed(), [], $css_version);
         wp_add_inline_style('pixiefreak-main', pixiefreak_inline_css());
     }
 }

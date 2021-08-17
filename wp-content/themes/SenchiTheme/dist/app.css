@@ -1,1 +1,35 @@
+.navbar {
+  justify-content: space-around;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
 
+#header_menu {
+  margin-left: 60px;
+  font-size: 2rem;
+}
+
+header .nav-placeholder .navbar li:not(.search) a {
+  font: 400 0.875em/18px "Roboto", sans-serif;
+}
+header .nav-placeholder .navbar li:not(.search) a:after {
+  content: none;
+}
+header .nav-placeholder a {
+  transition: none;
+}
+
+.title {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: #25aae1;
+}
+
+li {
+  transition: none;
+}
