@@ -21,38 +21,38 @@
 
 /* Adjustment */
 .gallery-caption {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .sticky {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 /* Alignment */
 .aligncenter {
-    text-align: center;
+  text-align: center;
 }
 
 .alignleft {
-    text-align: left;
+  text-align: left;
 }
 
 .alignright {
-    text-align: right;
+  text-align: right;
 }
 
 .bypostauthor {
-    color: rgba(105, 49, 249, 1);
+  color: rgba(105, 49, 249, 1);
 }
 
 .screen-reader-text {
-    display: none;
+  display: none;
 }
 
 .wp-caption-text {
-    color: rgba(105, 49, 249, 1);
+  color: rgba(105, 49, 249, 1);
 }
 
 .wp-caption {
-    max-width: 100%;
+  max-width: 100%;
 }

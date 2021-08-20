@@ -12,7 +12,7 @@
   .wp-block-social-link {
     .wp-block-social-link-anchor {
       svg {
-        fill: black;
+        fill: white;
       }
     }
   }
@@ -20,4 +20,22 @@
 
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-chain {
   background-color: #7289da;
+}
+
+.wp-block-image {
+  overflow: hidden;
+}
+
+.wp-block-image:not(.is-style-rounded) {
+  img {
+    transition: transform 0.2s;
+  }
+}
+
+.wp-block-image:not(.is-style-rounded) {
+  img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
