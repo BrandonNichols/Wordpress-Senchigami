@@ -19,7 +19,7 @@
 }
 
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-chain {
-  background-color: #7289da;
+  background-color: $discord-color;
 }
 
 .wp-block-image {
@@ -38,4 +38,17 @@
       transform: scale(1.1);
     }
   }
+}
+
+.wp-block-column {
+  flex-basis: 150px;
+  flex-grow: 0;
+}
+
+.single-page {
+  background-color: $page-background-color;
+}
+
+body {
+  color: white;
 }
