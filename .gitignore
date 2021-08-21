@@ -34,7 +34,6 @@ wp-snapshots/*
  
 # Ignore log files and databases.
 *.log
-*.sql
 *.sqlite
  
 # PhpStorm files.

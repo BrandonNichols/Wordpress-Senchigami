@@ -410,3 +410,7 @@ li {
 body {
   color: white;
 }
+
+.stream-list:not(.active) {
+  display: block !important;
+}
