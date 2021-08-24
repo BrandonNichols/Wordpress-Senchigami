@@ -411,6 +411,24 @@ body {
   color: white;
 }
 
+.section-twitch-player {
+  background-color: white;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.twitch-player {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.spacer {
+  height: 170px;
+}
+
 .stream-list:not(.active) {
   display: block !important;
 }
