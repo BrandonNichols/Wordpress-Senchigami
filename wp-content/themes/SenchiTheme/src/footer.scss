@@ -1,0 +1,21 @@
+.logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.senchi-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+footer {
+  background-color: $page-background-color;
+  i {
+    transition: color 0.25s ease;
+    &:hover {
+      color: $senchigami-cyan;
+    }
+  }
+}
