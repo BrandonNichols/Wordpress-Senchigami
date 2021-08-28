@@ -8,8 +8,6 @@
             <div class="spacer"></div>
             <?php get_template_part( 'includes/section', 'aboutus');?>
             <div class="spacer"></div>
-            <?php get_template_part('includes/section', 'twitch-player'); ?>
-            <div class="spacer"></div>
             <h2 class="partner-section-title">Senchigami Partners</h2>
             <img class="partners" src="http://localhost/wordpress/wp-content/uploads/2021/08/threadica.png"/>
             <div class="spacer"></div>

@@ -419,16 +419,11 @@ body {
   margin: 0;
 }
 
-.section-twitch-player {
-  background-color: white;
+.is-inner-page {
+  background-color: #1e2628;
 }
 
 .slider {
-  margin: 0 auto;
-  width: 60vw;
-}
-
-.twitch-player {
   margin: 0 auto;
   width: 60vw;
 }
@@ -491,14 +486,94 @@ body {
   margin-bottom: 20px;
 }
 
-.Artist {
-  display: flex;
-  justify-content: space-between;
+.Artist-section {
+  background-color: #1e2628;
 }
 
 .Artist-container {
   margin: 40px auto;
   width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.artist-member {
+  width: 150px;
+}
+.artist-member p {
+  text-align: center;
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.2s;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.twitch {
+  background-color: #6441a4;
+}
+
+.instagram {
+  background-color: #f00075;
+}
+
+.discord {
+  background-color: #7289da;
+}
+
+.tiktok {
+  background-color: black;
+}
+
+.behance {
+  background-color: #0757fe;
+}
+
+.artstation {
+  background-color: #13aff0;
+}
+
+.round-social {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+.round-social:hover {
+  transform: scale(1.1);
+}
+
+.social-placement {
+  position: relative;
+  top: 8px;
+}
+
+.hero-image {
+  height: 645.59px;
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/08/Sempire.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo-container {
