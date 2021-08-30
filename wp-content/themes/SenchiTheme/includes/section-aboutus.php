@@ -1,6 +1,6 @@
 <section class="about-us-container">
     <div class="about-us">
-        <img src="http://localhost/wordpress/wp-content/uploads/2021/08/Felipe-T-Clovis-3.jpg" />
+        <img src="http://localhost/wordpress/wp-content/uploads/2021/08/senchi-big.png" />
         <div class="about-us-text">
             <h1>About Us</h1>
             <p>Who is Senchigami? Who are we? Senchigami is an online apparel brand inspired by Eastern Pop Culture. 

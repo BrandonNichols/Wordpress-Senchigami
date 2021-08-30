@@ -1,17 +1,28 @@
-.Artist-section {
+.Member-section {
   background-color: $page-background-color;
+  h1 {
+    text-align: center;
+  }
 }
 
-.Artist-container {
+.Member-container {
   margin: 40px auto;
-  width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.artist-member {
+.artist-members {
+  width: 30%;
+}
+
+.team-members {
+  width: 47%;
+}
+
+.member {
   width: 150px;
+  margin: 10px;
   p {
     text-align: center;
   }
@@ -69,7 +80,20 @@
   background-color: $artstation;
 }
 
+.youtube {
+  background-color: $youtube;
+}
+
+.github {
+  background-color: $github;
+}
+
+.reddit {
+  background-color: $reddit;
+}
+
 .round-social {
+  margin: 1px;
   border-radius: 50%;
   width: 36px;
   height: 36px;
