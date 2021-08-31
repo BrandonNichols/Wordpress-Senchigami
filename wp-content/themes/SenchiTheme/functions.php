@@ -142,6 +142,16 @@ if (!function_exists('pixiefreak_scripts')) {
     }
 }
 
+//senchigami scripts
+if(!function_exists('senchiSlider')){
+    function senchiSlider(){
+        wp_register_script("senchi-slider", get_template_directory_uri() .'/src/app.js', ['jquery'], false, true);
+        wp_enqueue_script("senchi-slider");
+    }
+
+    add_action("wp_enqueue_scripts", 'senchiSlider');
+}
+
 // Inline javascript
 if (!function_exists('pixiefreak_inline_js')) {
     function pixiefreak_inline_js() {
