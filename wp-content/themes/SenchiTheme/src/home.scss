@@ -2,6 +2,10 @@
   background-color: $page-background-color;
 }
 
+.single-page {
+  background-color: $page-background-color;
+}
+
 .slider {
   margin: 0 auto;
   width: 60vw;
@@ -15,57 +19,6 @@
   display: block !important;
 }
 
-.about-us {
-  display: flex;
-  width: 60vw;
-  margin: 0 auto;
-  img {
-    max-width: 500px;
-  }
-}
-
-.about-us-text {
-  padding-left: 40px;
-  width: 50%;
-}
-
-.merch-container {
-  display: flex;
-  justify-content: center;
-
-  .person-merch-container {
-    margin: 0 45px;
-    width: 10%;
-  }
-
-  .person-image {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .merch {
-    opacity: 0;
-    position: relative;
-    top: 0;
-    transition-property: top, opacity;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .person-image:hover + .merch {
-    opacity: 1;
-    top: -20px;
-  }
-}
-
-.partners {
-  display: block;
-  width: 20%;
-  margin: 0 auto;
-}
-
-.partner-section-title {
-  margin: 0 auto;
-  width: 13%;
-  margin-bottom: 20px;
-}
+@import "home-about-us";
+@import "home-partner";
+@import "home-shop";

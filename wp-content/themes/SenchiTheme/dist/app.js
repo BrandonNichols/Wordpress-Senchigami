@@ -7,30 +7,35 @@
   \********************/
 /***/ (() => {
 
-var slideIndex = 1;
-showSlides(slideIndex); // Next/previous controls
+var player1;
+var player2;
+var player3;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slider-element");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex - 1].style.display = "block";
+function onYouTubeIframeAPIReady() {
+  player1 = new YT.Player("player1", {
+    height: "390",
+    width: "400",
+    videoId: "vGMEB2SbU_I",
+    playerVars: {
+      rel: 0
+    }
+  });
+  player2 = new YT.Player("player2", {
+    height: "390",
+    width: "400",
+    videoId: "XecBOTPSlAo",
+    playerVars: {
+      rel: 0
+    }
+  });
+  player3 = new YT.Player("player3", {
+    height: "390",
+    width: "400",
+    videoId: "kqSEOLcd7p0",
+    playerVars: {
+      rel: 0
+    }
+  });
 }
 
 /***/ }),

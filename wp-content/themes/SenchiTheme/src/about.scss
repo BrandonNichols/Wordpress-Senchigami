@@ -1,6 +1,24 @@
-.hero-image {
+.hero-image-about-us {
   height: 645.59px;
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/08/Sempire.png");
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Sempire-final.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.About-container {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.About-us-text {
+  margin: 0 auto;
+  width: 38vw;
+}
+
+.testimonials-container {
+  display: flex;
+}
+
+.testimonial {
+  margin: 20px 10px;
 }

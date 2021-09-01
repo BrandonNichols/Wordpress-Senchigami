@@ -1,22 +1,29 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slider-element");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
+let player1;
+let player2;
+let player3;
+function onYouTubeIframeAPIReady() {
+  player1 = new YT.Player("player1", {
+    height: "390",
+    width: "400",
+    videoId: "vGMEB2SbU_I",
+    playerVars: {
+      rel: 0
+    }
+  });
+  player2 = new YT.Player("player2", {
+    height: "390",
+    width: "400",
+    videoId: "XecBOTPSlAo",
+    playerVars: {
+      rel: 0
+    }
+  });
+  player3 = new YT.Player("player3", {
+    height: "390",
+    width: "400",
+    videoId: "kqSEOLcd7p0",
+    playerVars: {
+      rel: 0
+    }
+  });
 }

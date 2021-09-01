@@ -1,9 +1,9 @@
-<?php /* Template Name: About */ ?>
+<?php /* Template Name: Vintrolicity */ ?>
 <?php get_header();?>
-<section class="About-section">
-    <div class="hero-image-about-us"></div>
-    <div class="About-container">
-        <div class="About-us-text">
+<section class="Vintrolicity-section">
+    <div class="hero-image-vintrolicity"></div>
+    <div class="Vintrolicity-container">
+        <div class="Vintrolicity-text">
             <h1>About Us</h1>
             <p>
             Leverage agile frameworks to provide a robust synopsis for 
@@ -13,7 +13,7 @@
             workplace diversity and empowerment.
             </p>
         </div>
-        <?php get_template_part("/includes/section", "testimonials");?>
+        <?php //get_template_part("/includes/section", "testimonials");?>
     </div>
 </section>
 <?php get_footer();?>
