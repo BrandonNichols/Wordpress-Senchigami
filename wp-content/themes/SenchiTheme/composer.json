@@ -1,0 +1,10 @@
+{
+    "name": "senchigami/senchi-theme",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "preserve-paths" : [
+        "wordpress/wp-config.php"
+    ]
+}

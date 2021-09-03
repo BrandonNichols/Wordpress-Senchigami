@@ -13,6 +13,7 @@
 *.png
 *.txt
 *.csv
+.env
  
 # WP dirs.
 wp-admin/*

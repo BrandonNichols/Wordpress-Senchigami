@@ -142,6 +142,30 @@ if (!function_exists('pixiefreak_scripts')) {
     }
 }
 
+//senchigami scripts
+if(!function_exists('senchiScripts')){
+    function senchiScripts(){
+        wp_register_script('yt-api', "https://www.youtube.com/iframe_api", [], false, true);
+        wp_register_script("testimonials", get_template_directory_uri() .'/src/app.js', [], false, true);
+        wp_enqueue_script('yt-api');
+        wp_enqueue_script("testimonials");
+        
+        if(is_page('live')){
+            wp_register_script('axios', "https://unpkg.com/axios/dist/axios.min.js", [], false, true);
+            wp_register_script("twitch-api", get_template_directory_uri() .'/src/twitch-api.js', ['axios'], false, true);
+            wp_localize_script( "twitch-api", 'TWITCH_SECURITY_KEYS', array(
+                'token' => $_ENV['TWITCH_TOKEN'],
+                'id' => $_ENV['CLIENT_ID']
+            ) );
+            wp_enqueue_script("twitch-api");
+            wp_enqueue_script('axios');
+        }
+        
+    }
+
+    add_action("wp_enqueue_scripts", 'senchiScripts');
+}
+
 // Inline javascript
 if (!function_exists('pixiefreak_inline_js')) {
     function pixiefreak_inline_js() {
