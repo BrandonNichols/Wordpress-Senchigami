@@ -7,6 +7,7 @@
 .senchi-socials {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 20%;
 }
 
@@ -16,6 +17,11 @@ footer {
     transition: color 0.25s ease;
     &:hover {
       color: $senchigami-cyan;
+    }
+  }
+  .custom-logo-link {
+    img {
+      max-height: none;
     }
   }
 }

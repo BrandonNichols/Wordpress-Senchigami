@@ -33,6 +33,18 @@ header {
   }
 }
 
+header {
+  .nav-placeholder {
+    .container {
+      .custom-logo-link {
+        img {
+          max-height: none;
+        }
+      }
+    }
+  }
+}
+
 .title {
   color: #fff;
   transition: color 0.3s ease-in-out;
