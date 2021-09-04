@@ -1,0 +1,24 @@
+.streamer-container {
+  width: 300px;
+  .streamer {
+    div {
+      width: 80%;
+    }
+    & > p {
+      min-width: 20%;
+      text-align: right;
+    }
+  }
+}
+
+.streamer {
+  display: flex;
+}
+
+.profile-pic {
+  width: 27.17px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 4%;
+  align-self: center;
+}

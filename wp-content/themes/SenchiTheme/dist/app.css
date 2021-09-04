@@ -600,6 +600,29 @@ li {
   margin: 20px 10px;
 }
 
+.streamer-container {
+  width: 300px;
+}
+.streamer-container .streamer div {
+  width: 80%;
+}
+.streamer-container .streamer > p {
+  min-width: 20%;
+  text-align: right;
+}
+
+.streamer {
+  display: flex;
+}
+
+.profile-pic {
+  width: 27.17px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 4%;
+  align-self: center;
+}
+
 .hero-image-vintrolicity {
   height: 645.59px;
   background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png");
