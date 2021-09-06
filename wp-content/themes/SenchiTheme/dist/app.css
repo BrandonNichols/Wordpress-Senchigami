@@ -600,6 +600,10 @@ li {
   margin: 20px 10px;
 }
 
+.twitch-player {
+  display: flex;
+}
+
 .streamer-container {
   width: 300px;
 }

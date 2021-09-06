@@ -8,6 +8,7 @@ const headerOptions = {
   Authorization: `Bearer ${TWITCH_SECURITY_KEYS.token}`,
   "Client-Id": TWITCH_SECURITY_KEYS.id
 };
+let embed;
 
 users.forEach((user) => {
   liveStreams = liveStreams + `&user_login=${user}`;
@@ -78,10 +79,26 @@ function displayStreamers(currentLiveData, allStreamsData) {
       streamer.appendChild(viewerCount);
     }
 
+    streamer.addEventListener("click", clickStreamer);
+
     container.appendChild(streamer);
   }
 
   console.log("STREAMERS: ", streamCollection);
+}
+
+function twitchPlayer() {
+  return new Twitch.Embed("twitch-embed", {
+    width: 1603,
+    height: 767.34,
+    channel: "AnEternalEnigma",
+    parent: ["localhost"]
+  });
+}
+
+function clickStreamer(e) {
+  const streamer = e.currentTarget.querySelector(".streamer-name").innerHTML;
+  embed.setChannel(streamer);
 }
 
 Promise.all([getLive(), getStreamers()])
@@ -89,6 +106,7 @@ Promise.all([getLive(), getStreamers()])
     console.log("LIVE: ", res[0].data.data);
     console.log("ALL: ", res[1].data.data);
     displayStreamers(res[0].data.data, res[1].data.data);
+    embed = twitchPlayer();
   })
   .catch((err) => {
     console.log("ERR: ", err);

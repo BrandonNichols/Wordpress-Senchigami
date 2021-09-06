@@ -157,6 +157,8 @@ if(!function_exists('senchiScripts')){
                 'token' => $_ENV['TWITCH_TOKEN'],
                 'id' => $_ENV['CLIENT_ID']
             ) );
+            wp_register_script("twitch-embed", "https://embed.twitch.tv/embed/v1.js", [], false, true);
+            wp_enqueue_script("twitch-embed");
             wp_enqueue_script("twitch-api");
             wp_enqueue_script('axios');
         }
