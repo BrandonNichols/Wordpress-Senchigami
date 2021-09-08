@@ -2,35 +2,13 @@
 
 require get_template_directory() .'/inc/customization.php';
 
-// Stylesheet files
-if (!function_exists('pixiefreak_styles')) {
-    function pixiefreak_styles() {
-        $css_version  = '1.0.0';
+//Senchigami Styles
+if(!function_exists('senchiStyles')){
+    function senchiStyles(){
         $template_dir =  get_template_directory_uri();
 
-        wp_enqueue_style('pixiefreak-style', $template_dir .'/style.css', [], $css_version);
         wp_enqueue_style('fontawesome', $template_dir .'/assets/css/fontawesome-all.css', [], '5.15.3');
-        wp_enqueue_style('bootstrap', $template_dir .'/assets/css/bootstrap.min.css', [], $css_version);
-        wp_enqueue_style('owl-carousel', $template_dir .'/assets/css/owl.carousel.min.css', [], $css_version);
-        wp_enqueue_style('pixiefreak-main', $template_dir .'/assets/css/main.css', [], $css_version);
-        wp_enqueue_style('lightboxgallery', $template_dir .'/assets/css/lightboxgallery-min.css', [], $css_version);
-        wp_enqueue_style('jquery-bracket', $template_dir .'/assets/css/jquery.bracket.min.css', [], $css_version);
-        wp_enqueue_style('jquery-scrollbar', $template_dir .'/assets/css/jquery.scrollbar.css', [], $css_version);
-        wp_enqueue_style('senchigami-style', $template_dir .'/dist/app.css', [], $css_version);
-
-        // Google fonts
-        // $pixiefreak_google_fonts = function() {
-        //     $font_url = '';
-        //     if ('off' !== _x('on', 'Google font: on or off', 'pixiefreak')) {
-        //         $font_url = add_query_arg(
-        //             'family',
-        //             urlencode('Montserrat:300,400,500,700,900'),
-        //             '//fonts.googleapis.com/css'
-        //         );
-        //     }
-
-        //     return $font_url;
-        // };
+        wp_enqueue_style('senchigami-style', $template_dir .'/dist/app.css', [], false);
 
         $header_roboto_condensed = function() {
             $font_url = add_query_arg(
@@ -40,13 +18,36 @@ if (!function_exists('pixiefreak_styles')) {
             );
 
             return $font_url;
-        };  
+        };
 
-        // wp_enqueue_style('google-fonts', $pixiefreak_google_fonts(), [], $css_version);
         wp_enqueue_style('roboto-condensed-fonts', $header_roboto_condensed(), [], $css_version);
+    }
+    add_action('wp_enqueue_scripts', 'senchiStyles');
+}
+
+// Stylesheet files
+if (!function_exists('pixiefreak_styles')) {
+    function pixiefreak_styles() {
+        $css_version  = '1.0.0';
+        $template_dir =  get_template_directory_uri();
+
+        wp_enqueue_style('pixiefreak-style', $template_dir .'/style.css', [], $css_version);
+        
+        wp_enqueue_style('bootstrap', $template_dir .'/assets/css/bootstrap.min.css', [], $css_version);
+        wp_enqueue_style('owl-carousel', $template_dir .'/assets/css/owl.carousel.min.css', [], $css_version);
+        wp_enqueue_style('pixiefreak-main', $template_dir .'/assets/css/main.css', [], $css_version);
+        wp_enqueue_style('lightboxgallery', $template_dir .'/assets/css/lightboxgallery-min.css', [], $css_version);
+        wp_enqueue_style('jquery-bracket', $template_dir .'/assets/css/jquery.bracket.min.css', [], $css_version);
+        wp_enqueue_style('jquery-scrollbar', $template_dir .'/assets/css/jquery.scrollbar.css', [], $css_version);
+    
+        
         wp_add_inline_style('pixiefreak-main', pixiefreak_inline_css());
     }
 }
+
+add_theme_support('menus');
+
+register_nav_menu('header_menu',  esc_html__('Header Menu'));
 
 // Inline style
 if (!function_exists('pixiefreak_inline_css')) {
@@ -261,12 +262,12 @@ if (!isset($content_width)) {
 // WP Menu
 if (!function_exists('pixiefreak_add_menu')) {
     function pixiefreak_add_menu() {
-        register_nav_menu('header_menu',  esc_html__('Header Menu', 'pixiefreak'));
+        
         register_nav_menu('footer_menu',  esc_html__('Useful Links', 'pixiefreak'));
         register_nav_menu('footer_left',  esc_html__('Footer Left Menu', 'pixiefreak'));
         register_nav_menu('footer_right', esc_html__('Footer Right Menu', 'pixiefreak'));
 
-        load_theme_textdomain('pixiefreak', get_template_directory() . '/languages');
+        // load_theme_textdomain('pixiefreak', get_template_directory() . '/languages');
     }
 }
 
@@ -804,6 +805,6 @@ if (!function_exists('pixiefreak_should_show_getIn')) {
 	}
 }
 
-require get_template_directory() . '/core/functions-registry.php';
-require get_template_directory() . '/core/support-registry.php';
-require get_template_directory() . '/inc/classes/menu.php';
+// require get_template_directory() . '/core/functions-registry.php';
+// require get_template_directory() . '/core/support-registry.php';
+// require get_template_directory() . '/inc/classes/menu.php';

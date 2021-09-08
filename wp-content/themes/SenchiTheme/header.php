@@ -14,30 +14,22 @@
     <nav class="nav-placeholder">
         <div class="container">
             <!-- Mobile Sandwich Button -->
-            <button class="sandwich-btn" data-target="#mobileMenu" data-toggle="modal">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
-            <?php echo pixiefreak_custom_logo() ?>
+            <?//php echo pixiefreak_custom_logo() ?>
+			<a class='custom-logo-link' href="http://localhost/wordpress/">
+				<img src="http://localhost/wordpress/wp-content/uploads/2021/09/logo.png" />
+			</a>
 
 			<?php if (pixiefreak_should_show_menu('header_menu')): ?>
 				<?php wp_nav_menu([
 					'theme_location' => 'header_menu',
 					'menu_id' => 'header_menu',
 					'menu_class' => 'navbar',
-					'items_wrap' => pixiefreak_header_menu_wrap(),
-					'container' => false,
-					'walker' => (new pixiefreak_Menu())
+					'container' => false
 				]);
 				?>
 			<?php endif; ?>
         </div>
     </nav>
-
-	<?php if(pixiefreak_active() && is_home()): ?>
-		<?php get_template_part('/inc/sections/slider-section'); ?>
-	<?php endif; ?>
 </header>
 <!-- /HEADER -->

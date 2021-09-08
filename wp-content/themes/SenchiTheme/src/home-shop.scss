@@ -3,7 +3,7 @@
   justify-content: center;
 
   .person-merch-container {
-    margin: 0 45px;
+    margin: 0 85px;
     width: 10%;
   }
 
@@ -19,6 +19,7 @@
     transition-property: top, opacity;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
+    max-width: 300px;
   }
 
   .person-image:hover + .merch {

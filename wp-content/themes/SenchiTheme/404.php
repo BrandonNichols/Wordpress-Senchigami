@@ -1,9 +1,3 @@
-<?php
-if(pixiefreak_active()) {
-	$settings         = pixiefreak_settings( 'general' );
-	$headerBackground = $settings->get( 'notfound_background' );
-}
-?>
 <?php get_header(); ?>
 
 <section class="page-hero not-found">

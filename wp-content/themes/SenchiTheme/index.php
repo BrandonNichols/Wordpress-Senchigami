@@ -22,9 +22,4 @@
     <?php endforeach; ?>
 <?php endif; ?>
 
-
-<?php if (!pixiefreak_active()): ?>
-    <?php get_template_part('/inc/sections/news-section'); ?>
-<?php endif; ?>
-
 <?php get_footer(); ?>
