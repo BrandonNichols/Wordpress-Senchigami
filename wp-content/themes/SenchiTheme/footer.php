@@ -1,6 +1,5 @@
     <footer>
         <div class="logo-container">
-                <?php //echo pixiefreak_custom_logo() ?>
             <a class='custom-logo-link' href="http://localhost/wordpress/">
 				<img src="http://localhost/wordpress/wp-content/uploads/2021/09/logo.png" />
 			</a>

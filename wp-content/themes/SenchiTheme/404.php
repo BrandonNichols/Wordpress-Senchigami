@@ -3,13 +3,11 @@
 <section class="page-hero not-found">
     <div class="container">
         <h2>
-	        <?php echo esc_html__('404 Page not found!', 'pixiefreak'); ?>
+            404 Page not found!
         </h2>
         <h4>
-	        <?php echo esc_html__('Random text goes here to show that page is not found', 'pixiefreak'); ?>
+            No Page
         </h4>
-
-        <?php echo pixiefreak_custom_form() ?>
     </div>
 </section>
 
