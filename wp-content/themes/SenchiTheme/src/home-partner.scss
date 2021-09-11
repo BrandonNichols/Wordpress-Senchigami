@@ -9,3 +9,15 @@
   width: 13%;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: $mobile) {
+  .partner-section-title {
+    margin: 0 0 20px;
+    width: 100vw;
+  }
+
+  .partners {
+    margin: auto;
+    width: 100vw;
+  }
+}

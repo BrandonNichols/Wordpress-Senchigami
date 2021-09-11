@@ -32,8 +32,10 @@ if(!function_exists('senchiScripts')){
     function senchiScripts(){
         wp_register_script('yt-api', "https://www.youtube.com/iframe_api", [], false, true);
         wp_register_script("testimonials", get_template_directory_uri() .'/src/app.js', [], false, true);
+        wp_register_script('mobile', get_template_directory_uri() .'/src/mobile.js', [], false, true);
         wp_enqueue_script('yt-api');
         wp_enqueue_script("testimonials");
+        wp_enqueue_script('mobile');
         
         if(is_page('live')){
             wp_register_script('axios', "https://unpkg.com/axios/dist/axios.min.js", [], false, true);

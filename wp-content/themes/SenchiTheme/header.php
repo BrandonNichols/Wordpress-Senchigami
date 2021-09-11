@@ -17,7 +17,11 @@
 			<a class='custom-logo-link' href="http://localhost/wordpress/">
 				<img src="http://localhost/wordpress/wp-content/uploads/2021/09/logo.png" />
 			</a>
-				<?php wp_nav_menu([
+			<div class="menu-container">
+				<i class="fas fa-bars fa-lg hide show" onclick="displayMenu(event)"></i>
+				<i class="fas fa-times fa-lg hide" onclick="displayMenu(event)"></i>
+			</div>
+			<?php wp_nav_menu([
 					'theme_location' => 'header_menu',
 					'menu_id' => 'header_menu',
 					'menu_class' => 'navbar',

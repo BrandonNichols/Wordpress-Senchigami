@@ -5,9 +5,35 @@
   img {
     max-width: 500px;
   }
+  span {
+    display: none;
+  }
 }
 
 .about-us-text {
   padding-left: 40px;
   width: 50%;
+}
+
+@media screen and (max-width: $mobile) {
+  .about-us {
+    width: 100vw;
+    margin: auto;
+    flex-direction: column;
+    span {
+      color: $senchigami-cyan;
+      display: inline;
+    }
+  }
+
+  .about-us-text {
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+    height: 250px;
+  }
+
+  .show-text {
+    height: auto;
+  }
 }

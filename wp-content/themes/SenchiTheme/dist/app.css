@@ -350,19 +350,27 @@ p {
   color: white;
 }
 
+#header_menu {
+  font-size: 2rem;
+  width: 60vw;
+  list-style-type: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.fa-times {
+  display: none;
+}
+
 .navbar {
+  display: flex;
   justify-content: space-around;
   padding: 0 2.5rem;
   margin: 0 auto;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
-}
-
-#header_menu {
-  display: flex;
-  font-size: 2rem;
-  width: 60vw;
-  list-style-type: none;
 }
 
 header.is-page {
@@ -378,6 +386,7 @@ header .nav-placeholder .container {
   display: flex;
   height: 100px;
   align-items: center;
+  justify-content: space-around;
 }
 
 .custom-logo-link {
@@ -398,6 +407,58 @@ header .nav-placeholder .container {
   color: #25aae1;
 }
 
+@media screen and (max-width: 500px) {
+  .custom-logo-link {
+    display: none;
+  }
+
+  header .nav-placeholder .container {
+    position: fixed;
+    width: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    background-color: black;
+  }
+
+  #header_menu {
+    flex-direction: column;
+    font-size: 1rem;
+    border: none;
+    text-align: right;
+    z-index: 1;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 60px;
+    right: 57px;
+    z-index: 1;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: inline;
+  }
+
+  .fas {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .fa-times {
+    color: white;
+  }
+}
 body {
   background-color: #1e2628;
   font-family: "Roboto", sans-serif;
@@ -428,12 +489,37 @@ body {
 .about-us img {
   max-width: 500px;
 }
+.about-us span {
+  display: none;
+}
 
 .about-us-text {
   padding-left: 40px;
   width: 50%;
 }
 
+@media screen and (max-width: 500px) {
+  .about-us {
+    width: 100vw;
+    margin: auto;
+    flex-direction: column;
+  }
+  .about-us span {
+    color: #25aae1;
+    display: inline;
+  }
+
+  .about-us-text {
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+    height: 250px;
+  }
+
+  .show-text {
+    height: auto;
+  }
+}
 .partners {
   display: block;
   width: 20%;
@@ -446,21 +532,35 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 500px) {
+  .partner-section-title {
+    margin: 0 0 20px;
+    width: 100vw;
+  }
+
+  .partners {
+    margin: auto;
+    width: 100vw;
+  }
+}
 .merch-container {
   display: flex;
   justify-content: center;
 }
-.merch-container .person-merch-container {
+
+.person-merch-container {
   margin: 0 85px;
   width: 10%;
 }
-.merch-container .person-image {
+
+.person-image {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.merch-container .merch {
+
+.merch {
   opacity: 0;
   position: relative;
   top: 0;
@@ -469,11 +569,36 @@ body {
   transition-timing-function: ease-in-out;
   max-width: 300px;
 }
-.merch-container .person-image:hover + .merch {
+
+.person-image:hover + .merch {
   opacity: 1;
   top: -20px;
 }
 
+@media screen and (max-width: 500px) {
+  .person-image {
+    display: none;
+  }
+
+  .merch {
+    opacity: 1;
+    max-width: 126px;
+  }
+
+  .person-merch-container {
+    margin: auto;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    width: 100vw;
+  }
+
+  .spacer {
+    height: 20px;
+  }
+}
 .Member-section {
   background-color: #1e2628;
 }
@@ -674,4 +799,16 @@ footer i:hover {
 }
 footer .custom-logo-link img {
   max-height: none;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-container {
+    justify-self: unset;
+    flex-direction: column-reverse;
+  }
+
+  .senchi-socials {
+    justify-content: space-around;
+    width: 100vw;
+  }
 }

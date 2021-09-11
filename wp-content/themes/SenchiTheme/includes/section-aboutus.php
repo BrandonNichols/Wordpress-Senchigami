@@ -7,6 +7,7 @@
                 You’ve probably heard something like that before, and maybe you think you know what to expect when you check us out. 
                 After all, there are a lot of brands out there ‘inspired’ by Eastern Pop Culture, but to them, it’s just a look. 
                 Senchigami was inspired by the messages and themes of the Anime, Manga and other forms of Eastern media we love.</p>
+                
             <br>
             <p>We’re inspired by the ideas of reaching above, giving it your all, and going even further beyond. 
                 We’re driven by everything you’ve heard your favorite heroes shout in their darkest moment, right before they win. 
@@ -19,5 +20,6 @@
                 Maybe you don’t know what you’re going to do at all. 
                 Senchigami was founded on the idea that you KNOW you can do more than what you’re doing right now.</p>
         </div>
+        <span onclick="showText()">Click to show more</span>
     </div>
 </section>

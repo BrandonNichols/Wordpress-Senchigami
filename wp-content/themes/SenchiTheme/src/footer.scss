@@ -27,3 +27,15 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .logo-container {
+    justify-self: unset;
+    flex-direction: column-reverse;
+  }
+
+  .senchi-socials {
+    justify-content: space-around;
+    width: 100vw;
+  }
+}
