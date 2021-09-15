@@ -1,0 +1,42 @@
+.hero-image {
+  height: 645.59px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vintrolicity {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png");
+}
+
+.avioverse {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Avioverse.png");
+}
+
+.senchi-alternative-container {
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.about-us-alternative-text {
+  margin: 0 auto;
+  width: 38vw;
+  p {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
+
+.alternative-videos {
+  iframe {
+    display: none;
+    width: 560px;
+    margin: 20px auto;
+  }
+  .show {
+    display: block;
+  }
+}

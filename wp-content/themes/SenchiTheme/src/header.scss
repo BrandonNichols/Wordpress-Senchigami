@@ -2,6 +2,9 @@
   font-size: 2rem;
   width: 60vw;
   list-style-type: none;
+  li:first-child {
+    display: none;
+  }
 }
 
 .fa-bars {
@@ -84,7 +87,7 @@ header {
         width: 0;
         right: 0;
         top: 0;
-        height: 100vh;
+        height: 110vh;
         z-index: 1;
         background-color: black;
       }
@@ -93,15 +96,18 @@ header {
 
   #header_menu {
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 2rem;
     border: none;
     text-align: right;
     z-index: 1;
+    li:first-child {
+      display: block;
+    }
   }
 
   .menu-container {
     position: fixed;
-    top: 60px;
+    top: 140px;
     right: 57px;
     z-index: 1;
   }

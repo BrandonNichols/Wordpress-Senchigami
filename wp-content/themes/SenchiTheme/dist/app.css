@@ -355,6 +355,9 @@ p {
   width: 60vw;
   list-style-type: none;
 }
+#header_menu li:first-child {
+  display: none;
+}
 
 .fa-bars {
   display: none;
@@ -417,22 +420,25 @@ header .nav-placeholder .container {
     width: 0;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 110vh;
     z-index: 1;
     background-color: black;
   }
 
   #header_menu {
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 2rem;
     border: none;
     text-align: right;
     z-index: 1;
   }
+  #header_menu li:first-child {
+    display: block;
+  }
 
   .menu-container {
     position: fixed;
-    top: 60px;
+    top: 140px;
     right: 57px;
     z-index: 1;
   }
@@ -687,6 +693,10 @@ body {
   background-color: #fe4500;
 }
 
+.link {
+  background-color: grey;
+}
+
 .round-social {
   margin: 1px;
   border-radius: 50%;
@@ -734,6 +744,21 @@ body {
   margin: 20px 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .testimonials-container {
+    flex-direction: column;
+  }
+
+  .About-container {
+    margin: auto;
+    width: auto;
+  }
+
+  .About-us-text {
+    margin: auto;
+    width: auto;
+  }
+}
 .twitch-player {
   display: flex;
 }
@@ -761,16 +786,43 @@ body {
   align-self: center;
 }
 
-.hero-image-vintrolicity {
+.hero-image {
   height: 645.59px;
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.Vintrolicity-text {
+.vintrolicity {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png");
+}
+
+.avioverse {
+  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Avioverse.png");
+}
+
+.senchi-alternative-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-us-alternative-text {
   margin: 0 auto;
   width: 38vw;
+}
+.about-us-alternative-text p {
+  display: none;
+}
+.about-us-alternative-text .show {
+  display: block;
+}
+
+.alternative-videos iframe {
+  display: none;
+  width: 560px;
+  margin: 20px auto;
+}
+.alternative-videos .show {
+  display: block;
 }
 
 .logo-container {

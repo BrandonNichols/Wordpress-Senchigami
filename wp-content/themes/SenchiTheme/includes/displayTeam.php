@@ -8,9 +8,13 @@
             echo "<p>" . $p . "</p>";
             echo "<div class='social-wrapper'>";
             foreach($p_value["socials"] as $social => $s_value):
+                $category = 'fab';
+                if($social == 'link'):
+                    $category = 'fas';
+                endif;
                 echo "<div class='" . $social . " round-social'>";
-                echo "<a href='$s_value'>";
-                echo "<i class='fab fa-$social fa-lg social-placement'></i>";
+                echo "<a href='$s_value' target='_blank'>";
+                echo "<i class='$category fa-$social fa-lg social-placement'></i>";
                 echo "</a>";
                 echo "</div>";
             endforeach;

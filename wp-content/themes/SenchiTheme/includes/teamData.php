@@ -43,6 +43,12 @@ $artists = [
             "discord" => "https://discord.gg/SDSe6TJKDv",
         ]
     ],
+    "ehhri" => [
+        "image" => "http://localhost/wordpress/wp-content/uploads/2021/09/ehri_design-150x150.png",
+        "socials" => [
+            "link" => "https://ehhri.carrd.co/"
+        ]
+    ],
 ];
 $royals = [
     "Y4MI" => [
@@ -51,7 +57,7 @@ $royals = [
             "twitter" => "https://twitter.com/yamiyamatokun",
             "twitch" => "https://www.twitch.tv/y4mikun",
             "instagram" => "https://www.instagram.com/yrowe5/",
-            "discord" => "https://discord.gg",
+            "discord" => "https://discord.gg/AKdWrn4pkq",
             "tiktok" => "https://www.tiktok.com/@y4mikun"
         ]
     ],

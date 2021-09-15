@@ -1,5 +1,20 @@
-// const users = ["sehkuro", "veluxe_gg", "LicheeLi", "Delicatexo", "y4mikun"];
-const users = ["AnEternalEnigma", "boxbox", "HasanAbi", "xQcOW", "Lacari"];
+const users = [
+  "sehkuro",
+  "veluxe_gg",
+  "LicheeLi",
+  "Delicatexo",
+  "y4mikun",
+  "pixzelesart",
+  "aereio_"
+];
+// const users = [
+//   "AnEternalEnigma",
+//   "boxbox",
+//   "HasanAbi",
+//   "xQcOW",
+//   "Lacari",
+//   "datmodz"
+// ];
 
 let liveStreams = "";
 let streamers = "";
@@ -91,7 +106,7 @@ function twitchPlayer() {
   return new Twitch.Embed("twitch-embed", {
     width: 1603,
     height: 767.34,
-    channel: "AnEternalEnigma",
+    channel: "y4mikun",
     parent: ["localhost"]
   });
 }
@@ -101,13 +116,14 @@ function clickStreamer(e) {
   embed.setChannel(streamer);
 }
 
-Promise.all([getLive(), getStreamers()])
-  .then((res) => {
-    console.log("LIVE: ", res[0].data.data);
-    console.log("ALL: ", res[1].data.data);
+async function populateLivePage() {
+  try {
+    const res = await Promise.all([getLive(), getStreamers()]);
     displayStreamers(res[0].data.data, res[1].data.data);
     embed = twitchPlayer();
-  })
-  .catch((err) => {
+  } catch (error) {
     console.log("ERR: ", err);
-  });
+  }
+}
+
+populateLivePage();

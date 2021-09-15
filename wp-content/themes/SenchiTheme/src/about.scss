@@ -22,3 +22,19 @@
 .testimonial {
   margin: 20px 10px;
 }
+
+@media screen and (max-width: $mobile) {
+  .testimonials-container {
+    flex-direction: column;
+  }
+
+  .About-container {
+    margin: auto;
+    width: auto;
+  }
+
+  .About-us-text {
+    margin: auto;
+    width: auto;
+  }
+}
