@@ -549,6 +549,15 @@ body {
     width: 100vw;
   }
 }
+@media screen and (max-width: 500px) {
+  .slider {
+    width: 100vw;
+  }
+
+  .spacer {
+    height: 20px;
+  }
+}
 .merch-container {
   display: flex;
   justify-content: center;
@@ -595,14 +604,9 @@ body {
     margin: auto;
     width: 100vw;
   }
-}
-@media screen and (max-width: 500px) {
-  .slider {
-    width: 100vw;
-  }
 
-  .spacer {
-    height: 20px;
+  .merch-container {
+    width: 100vw;
   }
 }
 .Member-section {
@@ -719,29 +723,14 @@ body {
   top: 8px;
 }
 
-.hero-image-about-us {
-  height: 645.59px;
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Sempire-final.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.About-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .About-container {
-  margin: 0 auto;
-  width: 60vw;
-}
-
-.About-us-text {
-  margin: 0 auto;
-  width: 38vw;
-}
-
-.testimonials-container {
-  display: flex;
-}
-
-.testimonial {
-  margin: 20px 10px;
+  width: 63vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -749,18 +738,29 @@ body {
     flex-direction: column;
   }
 
+  .About-section img {
+    width: 100vw;
+  }
+
   .About-container {
-    margin: auto;
     width: auto;
   }
 
   .About-us-text {
-    margin: auto;
-    width: auto;
+    padding-left: 19px;
+  }
+
+  .About-container {
+    width: 99vw;
   }
 }
 .twitch-player {
   display: flex;
+}
+
+#twitch-embed {
+  width: 100%;
+  height: 767.34px;
 }
 
 .streamer-container {
@@ -786,29 +786,31 @@ body {
   align-self: center;
 }
 
-.hero-image {
-  height: 645.59px;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (max-width: 500px) {
+  .twitch-player {
+    flex-direction: column;
+  }
+
+  .streamer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.alternative-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.vintrolicity {
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png");
+.senchi-alternative-container {
+  width: 60vw;
 }
-
-.avioverse {
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Avioverse.png");
-}
-
 .senchi-alternative-container h2 {
   text-align: center;
   font-size: 2rem;
 }
 
-.about-us-alternative-text {
-  margin: 0 auto;
-  width: 38vw;
-}
 .about-us-alternative-text p {
   display: none;
 }
@@ -816,15 +818,33 @@ body {
   display: block;
 }
 
+.alternative-videos {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
 .alternative-videos iframe {
   display: none;
   width: 560px;
-  margin: 20px auto;
 }
 .alternative-videos .show {
   display: block;
 }
 
+@media screen and (max-width: 500px) {
+  .hero-image {
+    width: 100vw;
+  }
+
+  .senchi-alternative-container {
+    width: 100vw;
+  }
+
+  .alternative-videos iframe {
+    width: 100vw;
+  }
+}
 .logo-container {
   display: flex;
   justify-content: space-evenly;

@@ -3,7 +3,7 @@ const users = [
   "veluxe_gg",
   "LicheeLi",
   "Delicatexo",
-  "y4mikun",
+  "Y4MI",
   "pixzelesart",
   "aereio_"
 ];
@@ -98,15 +98,13 @@ function displayStreamers(currentLiveData, allStreamsData) {
 
     container.appendChild(streamer);
   }
-
-  console.log("STREAMERS: ", streamCollection);
 }
 
 function twitchPlayer() {
   return new Twitch.Embed("twitch-embed", {
-    width: 1603,
-    height: 767.34,
-    channel: "y4mikun",
+    width: "100%",
+    height: "100%",
+    channel: "Y4MI",
     parent: ["localhost"]
   });
 }

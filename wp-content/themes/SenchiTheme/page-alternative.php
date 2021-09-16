@@ -1,14 +1,21 @@
 <?php /* Template Name: Alternative */ ?>
 <?php get_header();?>
 <section class="alternative-section">
-    <div class= "hero-image <?php
-        if(is_page("vintrolicity")){
-            echo "vintrolicity";
-        } elseif(is_page("avioverse")){
-            echo "avioverse";
-        }
+    <!-- <div class= "hero-image <?php
+        // if(is_page("vintrolicity")){
+        //     echo "vintrolicity";
+        // } elseif(is_page("avioverse")){
+        //     echo "avioverse";
+        // }
     ?>"
-    ></div>
+    ></div> -->
+    <img class="hero-image" src=<?php
+        if(is_page("vintrolicity")){
+            echo "http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png";
+        } elseif(is_page("avioverse")){
+            echo "http://localhost/wordpress/wp-content/uploads/2021/09/Avioverse.png";
+        }
+    ?>>
     <div class="senchi-alternative-container">
         <div class="about-us-alternative-text">
             <h1>About Us</h1>
@@ -38,7 +45,7 @@
             allowfullscreen></iframe>
         </section>
         <h2>SHOP NOW</h2>
-        <?php get_template_part("/includes/section", "shop");?>
     </div>
+    <?php get_template_part("/includes/section", "shop");?>
 </section>
 <?php get_footer();?>

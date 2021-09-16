@@ -38,8 +38,14 @@
     max-width: 126px;
   }
 
+  //for home page
   .person-merch-container {
     margin: auto;
+    width: 100vw;
+  }
+
+  //for other pages
+  .merch-container {
     width: 100vw;
   }
 }

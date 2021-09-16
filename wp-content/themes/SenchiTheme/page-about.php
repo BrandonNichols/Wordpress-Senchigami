@@ -1,7 +1,7 @@
 <?php /* Template Name: About */ ?>
 <?php get_header();?>
 <section class="About-section">
-    <div class="hero-image-about-us"></div>
+    <img src="http://localhost/wordpress/wp-content/uploads/2021/09/Sempire-final.png" alt="Welcome to the sempire">
     <div class="About-container">
         <div class="About-us-text">
             <h1>About Us</h1>

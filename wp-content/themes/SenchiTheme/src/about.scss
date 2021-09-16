@@ -1,26 +1,11 @@
-.hero-image-about-us {
-  height: 645.59px;
-  background-image: url("http://localhost/wordpress/wp-content/uploads/2021/09/Sempire-final.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.About-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .About-container {
-  margin: 0 auto;
-  width: 60vw;
-}
-
-.About-us-text {
-  margin: 0 auto;
-  width: 38vw;
-}
-
-.testimonials-container {
-  display: flex;
-}
-
-.testimonial {
-  margin: 20px 10px;
+  width: 63vw;
 }
 
 @media screen and (max-width: $mobile) {
@@ -28,13 +13,21 @@
     flex-direction: column;
   }
 
+  .About-section {
+    img {
+      width: 100vw;
+    }
+  }
+
   .About-container {
-    margin: auto;
     width: auto;
   }
 
   .About-us-text {
-    margin: auto;
-    width: auto;
+    padding-left: 19px;
+  }
+
+  .About-container {
+    width: 99vw;
   }
 }
