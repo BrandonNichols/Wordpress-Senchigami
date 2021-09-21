@@ -105,7 +105,7 @@ function twitchPlayer() {
     width: "100%",
     height: "100%",
     channel: "Y4MI",
-    parent: ["localhost"]
+    parent: ["senchigami.com"]
   });
 }
 

@@ -1,7 +1,8 @@
-    <footer>
+<?php require __DIR__ . '/includes/site-url.php';?>
+<footer>
         <div class="logo-container">
-            <a class='custom-logo-link' href="http://localhost/wordpress/">
-				<img src="http://localhost/wordpress/wp-content/uploads/2021/09/logo.png" />
+            <a class='custom-logo-link' href="<?php echo $site?>">
+				<img src="<?php echo $site?>wp-content/uploads/2021/09/logo.png" />
 			</a>
             <div class="senchi-socials">
                 <a href="https://www.twitter.com" target="_blank">

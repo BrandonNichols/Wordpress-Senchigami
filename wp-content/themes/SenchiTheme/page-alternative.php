@@ -1,19 +1,12 @@
 <?php /* Template Name: Alternative */ ?>
+<?php require __DIR__ . '/includes/site-url.php';?>
 <?php get_header();?>
 <section class="alternative-section">
-    <!-- <div class= "hero-image <?php
-        // if(is_page("vintrolicity")){
-        //     echo "vintrolicity";
-        // } elseif(is_page("avioverse")){
-        //     echo "avioverse";
-        // }
-    ?>"
-    ></div> -->
     <img class="hero-image" src=<?php
         if(is_page("vintrolicity")){
-            echo "http://localhost/wordpress/wp-content/uploads/2021/09/Vintrolicity.png";
+            echo "<?php echo $site?>wp-content/uploads/2021/09/Vintrolicity.png";
         } elseif(is_page("avioverse")){
-            echo "http://localhost/wordpress/wp-content/uploads/2021/09/Avioverse.png";
+            echo "<?php echo $site?>wp-content/uploads/2021/09/Avioverse.png";
         }
     ?>>
     <div class="senchi-alternative-container">

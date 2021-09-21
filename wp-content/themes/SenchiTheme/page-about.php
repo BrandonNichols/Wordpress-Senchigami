@@ -1,7 +1,8 @@
 <?php /* Template Name: About */ ?>
+<?php require __DIR__ . '/includes/site-url.php';?>
 <?php get_header();?>
 <section class="About-section">
-    <img src="http://localhost/wordpress/wp-content/uploads/2021/09/Sempire-final.png" alt="Welcome to the sempire">
+    <img src="<?php echo $site?>wp-content/uploads/2021/09/Sempire-final.png" alt="Welcome to the sempire">
     <div class="About-container">
         <div class="About-us-text">
             <h1>About Us</h1>

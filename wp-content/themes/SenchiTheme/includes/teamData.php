@@ -1,7 +1,9 @@
 <?php
+require 'site-url.php';
+
 $artists = [
     "Pixzeles" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Pixzeles-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Pixzeles-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/Pixzeles",
             "twitch" => "https://www.twitch.tv/pixzelesart",
@@ -11,31 +13,31 @@ $artists = [
         ]
     ],
     "Andre" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/andre-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/andre-150x150.jpg",
         "socials" => [
             "behance" => "https://www.behance.net/vkdesign42d600"
         ]
     ],
     "Yona" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/yona-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/yona-150x150.png",
         "socials" => [
             "artstation" => "https://www.artstation.com/yonasaura"
         ]
     ],
     "Knuxxy" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/knuxxy-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/knuxxy-150x150.png",
         "socials" => [
             "twitter" => "https://twitter.com/Knuxyy"
         ]
     ],
     "Jhony" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Jhony-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/Jhony-150x150.png",
         "socials" => [
             "instagram" => "https://www.instagram.com/jhonycaballeroart/"
         ]
     ],
     "Aereio" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Aereio-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Aereio-2-edited-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/aereio_",
             "twitch" => "https://www.twitch.tv/aereio_",
@@ -44,7 +46,7 @@ $artists = [
         ]
     ],
     "ehhri" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/09/ehri_design-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/09/ehri_design-150x150.png",
         "socials" => [
             "link" => "https://ehhri.carrd.co/"
         ]
@@ -52,7 +54,7 @@ $artists = [
 ];
 $royals = [
     "Y4MI" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Y4MI-2-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/Y4MI-2-150x150.png",
         "socials" => [
             "twitter" => "https://twitter.com/yamiyamatokun",
             "twitch" => "https://www.twitch.tv/Y4MI",
@@ -62,7 +64,7 @@ $royals = [
         ]
     ],
     "Sehkuro" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Sehkuro-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Sehkuro-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/sehkuro",
             "twitch" => "https://www.twitch.tv/sehkuro",
@@ -72,7 +74,7 @@ $royals = [
         ]
     ],
     "Veluxe" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Veluxe-2-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/Veluxe-2-150x150.png",
         "socials" => [
             "twitter" => "https://twitter.com/veluxe_gg",
             "twitch" => "https://www.twitch.tv/veluxe_gg",
@@ -82,7 +84,7 @@ $royals = [
         ]
     ],
     "Licheeli" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Licheeli-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Licheeli-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/li_lichee",
             "twitch" => "https://www.twitch.tv/licheeli",
@@ -92,14 +94,14 @@ $royals = [
         ]
     ],
     "Sinzera" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Sinzera-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Sinzera-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/Sinzera3",
             "youtube" => "https://www.youtube.com/channel/UCqEUohqu3-X9_i03jZrapAA"
         ]
     ],
     "Delicatexo" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Delicatexo-2-edited-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/Delicatexo-2-edited-150x150.png",
         "socials" => [
             "twitter" => "https://twitter.com/delicatexoxo",
             "twitch" => "https://www.twitch.tv/delicatexo",
@@ -109,7 +111,7 @@ $royals = [
         ]
     ],
     "Gabbmew" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Gabmew-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Gabmew-2-edited-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/gabbmew",
             "twitch" => "https://www.twitch.tv",
@@ -119,7 +121,7 @@ $royals = [
         ]
     ],
     "Pixzeles" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Pixzeles-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Pixzeles-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/Pixzeles",
             "twitch" => "https://www.twitch.tv/pixzelesart",
@@ -129,7 +131,7 @@ $royals = [
         ]
     ],
     "Aereio" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Aereio-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Aereio-2-edited-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/aereio_",
             "twitch" => "https://www.twitch.tv/aereio_",
@@ -138,7 +140,7 @@ $royals = [
         ]
     ],
     "Virdison" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Viridison-2-150x150.png",
+        "image" => "$site/wp-content/uploads/2021/08/Viridison-2-150x150.png",
         "socials" => [
             "twitter" => "https://twitter.com/Virdison",
             "twitch" => "https://www.twitch.tv/virdison",
@@ -150,33 +152,39 @@ $royals = [
 ];
 $vips = [
     "Bailey" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Bailey-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Bailey-2-edited-150x150.jpg",
         "socials" => [
             "instagram" => "https://www.instagram.com/bails_robinson/",
         ]
     ],
     "Selena" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Selena-2-150x150.jpeg",
+        "image" => "$site/wp-content/uploads/2021/08/Selena-2-150x150.jpeg",
         "socials" => [
             "instagram" => "https://www.instagram.com/suh_its_selena/",
         ]
     ],
     "Austin" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Austin-3-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Austin-3-150x150.jpg",
         "socials" => [
             "instagram" => "https://www.instagram.com/austin_kopriva/",
+        ]
+    ],
+    "LJ" => [
+        "image" => "$site/wp-content/uploads/2021/09/LJ-150x150.jpg",
+        "socials" => [
+            "instagram" => "https://www.instagram.com/ljeeezyy/",
         ]
     ],
 ];
 $staff = [
     "Mason" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Mason-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Mason-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/MasonBaird11",
         ]
     ],
     "Noller" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Noller-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Noller-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/NollerReal",
             "twitch" => "https://www.twitch.tv/nollerreal",
@@ -184,23 +192,23 @@ $staff = [
         ]
     ],
     "Parker" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Parker-2-150x150.gif",
+        "image" => "$site/wp-content/uploads/2021/08/Parker-2-150x150.gif",
         "socials" => []
     ],
     "Sailor Shen" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Sailorshen-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Sailorshen-2-edited-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/SailorShen",
         ]
     ],
     "Eyeshtick" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Eyeshtick-4-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Eyeshtick-4-edited-150x150.jpg",
         "socials" => [
             "github" => "https://www.github.com/BrandonNichols"
         ]
     ],
     "Jackson Haime" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Jackson-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/09/Jackson-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/JacksonHaime",
             "reddit" => "https://www.reddit.com/r/JacksonWrites/",
@@ -209,22 +217,28 @@ $staff = [
 ];
 $management = [
     "Felipe T Clovis" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Felipe-T-Clovis-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Felipe-T-Clovis-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/FelipeTClovis"
         ]
     ],
     "Hylishia" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Hylishia-2-edited-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Hylishia-2-edited-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/seiouhi",
             "instagram" => "https://www.instagram.com/hylishia/"
         ]
     ],
     "Envoilum" => [
-        "image" => "http://localhost/wordpress/wp-content/uploads/2021/08/Envoilum-2-150x150.jpg",
+        "image" => "$site/wp-content/uploads/2021/08/Envoilum-2-150x150.jpg",
         "socials" => [
             "twitter" => "https://twitter.com/Envoilum"
+        ]
+    ],
+    "Baihe" => [
+        "image" => "$site/wp-content/uploads/2021/09/Baihe-150x150.jpg",
+        "socials" => [
+            "twitter" => "https://twitter.com/bbaihe_/"
         ]
     ],
 ];

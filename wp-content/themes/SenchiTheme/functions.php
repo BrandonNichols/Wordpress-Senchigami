@@ -6,19 +6,19 @@ if(!function_exists('senchiStyles')){
         $template_dir =  get_template_directory_uri();
 
         wp_enqueue_style('fontawesome', $template_dir .'/assets/css/fontawesome-all.css', [], '5.15.3');
+        wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css2?family=Arimo|family=Cairo|family=Fira+Sans|family=Kanit|family=Poppins|family=Prompt|family=Quicksand|family=Raleway|family=Ubuntu|family=Yanone+Kaffeesatz&display=swap", [], false);
         wp_enqueue_style('senchigami-style', $template_dir .'/dist/app.css', [], false);
 
-        $header_roboto_condensed = function() {
-            $font_url = add_query_arg(
-                'family',
-                urlencode('Roboto:700'),
-                '//fonts.googleapis.com/css'
-            );
+        // $header_roboto_condensed = function() {
+        //     $font_url = add_query_arg(
+        //         'family',
+        //         urlencode('Roboto:700'),
+        //         '//fonts.googleapis.com/css'
+        //     );
 
-            return $font_url;
-        };
+        //     return $font_url;
+        // };
 
-        wp_enqueue_style('roboto-condensed-fonts', $header_roboto_condensed(), [], $css_version);
     }
     add_action('wp_enqueue_scripts', 'senchiStyles');
 }

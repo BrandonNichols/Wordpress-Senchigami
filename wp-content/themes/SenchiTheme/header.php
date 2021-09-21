@@ -9,13 +9,14 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<?php require __DIR__ . '/includes/site-url.php';?>
 <!-- HEADER -->
 <header>
     <nav class="nav-placeholder">
         <div class="container">
             <!-- Mobile Sandwich Button -->
-			<a class='custom-logo-link' href="http://localhost/wordpress/">
-				<img src="http://localhost/wordpress/wp-content/uploads/2021/09/logo.png" />
+			<a class='custom-logo-link' href="<?php echo $site?>">
+				<img src="<?php echo $site?>wp-content/uploads/2021/09/logo.png" />
 			</a>
 			<div class="menu-container">
 				<div class="menu-button">

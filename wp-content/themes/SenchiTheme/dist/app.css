@@ -467,7 +467,7 @@ header .nav-placeholder .container {
 }
 body {
   background-color: #1e2628;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .single-page {
@@ -811,6 +811,11 @@ body {
   font-size: 2rem;
 }
 
+.about-us-alternative-text {
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+}
 .about-us-alternative-text p {
   display: none;
 }
