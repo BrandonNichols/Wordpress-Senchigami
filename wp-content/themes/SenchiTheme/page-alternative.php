@@ -4,9 +4,9 @@
 <section class="alternative-section">
     <img class="hero-image" src=<?php
         if(is_page("vintrolicity")){
-            echo "<?php echo $site?>wp-content/uploads/2021/09/Vintrolicity.png";
+            echo $site . 'wp-content/uploads/2021/09/Vintrolicity.png';
         } elseif(is_page("avioverse")){
-            echo "<?php echo $site?>wp-content/uploads/2021/09/Avioverse.png";
+            echo $site . 'wp-content/uploads/2021/09/Avioverse.png';
         }
     ?>>
     <div class="senchi-alternative-container">

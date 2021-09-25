@@ -338,6 +338,10 @@ template {
   display: none;
 }
 
+h3 {
+  color: white;
+}
+
 h1 {
   color: white;
 }
@@ -731,6 +735,15 @@ body {
 
 .About-container {
   width: 63vw;
+  text-align: center;
+}
+
+.About-us-text {
+  width: 43vw;
+  margin: 0 auto;
+}
+.About-us-text p {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 500px) {

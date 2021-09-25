@@ -6,6 +6,15 @@
 
 .About-container {
   width: 63vw;
+  text-align: center;
+}
+
+.About-us-text {
+  width: 43vw;
+  margin: 0 auto;
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: $mobile) {
