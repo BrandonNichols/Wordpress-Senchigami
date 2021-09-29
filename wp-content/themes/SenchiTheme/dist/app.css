@@ -863,6 +863,14 @@ body {
     width: 100vw;
   }
 }
+.product-image {
+  display: none;
+}
+
+.active-image {
+  display: block;
+}
+
 .logo-container {
   display: flex;
   justify-content: space-evenly;
