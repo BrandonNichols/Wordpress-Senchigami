@@ -7,7 +7,13 @@
             <?php endforeach;?>
         </div>
         <p><?=$product_name;?></p>
-        <button onclick="changeSlide(-1, '<?=$product_name;?>')">previous</button>
-        <button onclick="changeSlide(1, '<?=$product_name;?>')">next</button>
+        <div class="button-container">
+            <button onclick="changeSlide(-1, '<?=$product_name;?>')">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button onclick="changeSlide(1, '<?=$product_name;?>')">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
     </div>
 <?php endforeach;?>

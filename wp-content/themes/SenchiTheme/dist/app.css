@@ -863,12 +863,38 @@ body {
     width: 100vw;
   }
 }
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  position: relative;
+  max-width: 300px;
+}
+.product p {
+  text-align: center;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 40%;
+}
+.button-container button {
+  background-color: transparent;
+  border: none;
+}
+
 .product-image {
   display: none;
 }
 
 .active-image {
   display: block;
+  max-height: 300px;
 }
 
 .logo-container {
