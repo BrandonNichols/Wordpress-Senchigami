@@ -29,6 +29,7 @@ wp-snapshots/*
 /wp-content/themes/*
 !wp-content/themes/SenchiTheme
 !wp-content/themes/CUSTOM_THEME_2 # etc.
+/wp-content/ai1wm-backups/
  
 # Ignore node dependency directories.
 **/node_modules/
