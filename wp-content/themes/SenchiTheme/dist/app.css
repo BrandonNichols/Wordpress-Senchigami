@@ -469,6 +469,17 @@ header .nav-placeholder .container {
     color: white;
   }
 }
+.section-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials-container {
+    flex-direction: column;
+  }
+}
 body {
   background-color: #1e2628;
   font-family: "Poppins", sans-serif;
@@ -727,6 +738,17 @@ body {
   top: 8px;
 }
 
+.section-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials-container {
+    flex-direction: column;
+  }
+}
 .About-section {
   display: flex;
   flex-direction: column;
@@ -747,10 +769,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .testimonials-container {
-    flex-direction: column;
-  }
-
   .About-section img {
     width: 100vw;
   }

@@ -119,7 +119,7 @@ async function populateLivePage() {
     const res = await Promise.all([getLive(), getStreamers()]);
     displayStreamers(res[0].data.data, res[1].data.data);
     embed = twitchPlayer();
-  } catch (error) {
+  } catch (err) {
     console.log("ERR: ", err);
   }
 }

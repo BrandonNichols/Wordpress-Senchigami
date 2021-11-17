@@ -37,7 +37,6 @@
 Interested in joining an amazing group of content creators who are committed to being better and reaching their goals?
 Apply at: info@senchigami.com or DM us on Twitter @Senchigami</p>
         </div>
-        <?php get_template_part("/includes/section", "testimonials");?>
     </div>
 </section>
 <?php get_footer();?>
