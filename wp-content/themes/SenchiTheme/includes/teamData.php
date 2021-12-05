@@ -52,7 +52,7 @@ $artists = [
         ]
     ],
 ];
-$royals = [
+$ambassadors = [
     "Y4MI" => [
         "image" => "$site/wp-content/uploads/2021/08/Y4MI-2-150x150.png",
         "socials" => [
@@ -147,6 +147,15 @@ $royals = [
             "instagram" => "https://www.instagram.com/virdison/",
             "discord" => "https://discord.gg/YKNbrtw",
             "tiktok" => "https://www.tiktok.com/@virdison"
+        ]
+    ],
+    "Noona" => [
+        "image" => "$site/wp-content/uploads/2021/12/Thenoona-150x150.jpg",
+        "socials" => [
+            "twitter" => "https://twitter.com/dwaekkinoona",
+            "twitch" => "https://www.twitch.tv/dwaekkinoona",
+            "discord" => "https://discord.gg/26cpMmazfq",
+            "tiktok" => "https://tiktok.com/@dwaekkinoona"
         ]
     ],
 ];
