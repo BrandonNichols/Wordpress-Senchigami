@@ -5,7 +5,7 @@
 <section class="Member-section">
     <h1>Senchigami Royals</h1>
     <div class="Member-container team-members">
-    <?php displayTeam($royals);?>
+    <?php displayTeam($ambassadors);?>
     </div>
     <h1>VIPs</h1>
     <div class="Member-container team-members">

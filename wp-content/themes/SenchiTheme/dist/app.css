@@ -628,6 +628,7 @@ body {
 }
 
 .team-members {
+  max-width: 47%;
   width: 47%;
 }
 
