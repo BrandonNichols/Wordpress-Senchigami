@@ -56,7 +56,7 @@ $ambassadors = [
     "Y4MI" => [
         "image" => "$site/wp-content/uploads/2021/08/Y4MI-2-150x150.png",
         "socials" => [
-            "twitter" => "https://twitter.com/yamiyamatokun",
+            "twitter" => "https://twitter.com/y4mikunn",
             "twitch" => "https://www.twitch.tv/Y4MI",
             "instagram" => "https://www.instagram.com/yrowe5/",
             "discord" => "https://discord.gg/AKdWrn4pkq",
@@ -221,6 +221,12 @@ $staff = [
         "socials" => [
             "twitter" => "https://twitter.com/JacksonHaime",
             "reddit" => "https://www.reddit.com/r/JacksonWrites/",
+        ]
+    ],
+    "MeticLion" => [
+        "image" => "$site/wp-content/uploads/2021/12/metic-150x150.jpg",
+        "socials" => [
+            "twitch" => "https://www.twitch.tv/meticlion"
         ]
     ],
 ];
