@@ -629,6 +629,13 @@ body {
 }
 .Member-section h1 {
   text-align: center;
+  border-top: 1px solid white;
+  margin: 0 auto;
+  width: 25%;
+  padding-top: 20px;
+}
+.Member-section h1:first-child {
+  border-top: none;
 }
 
 .Member-container {

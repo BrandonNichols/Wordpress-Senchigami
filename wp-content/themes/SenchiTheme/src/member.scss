@@ -2,6 +2,14 @@
   background-color: $page-background-color;
   h1 {
     text-align: center;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    width: 25%;
+    padding-top: 20px;
+
+    &:first-child {
+      border-top: none;
+    }
   }
 }
 
