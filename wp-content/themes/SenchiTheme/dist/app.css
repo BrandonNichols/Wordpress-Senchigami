@@ -493,6 +493,9 @@ body {
   margin: 0 auto;
   width: 60vw;
 }
+.slider img {
+  width: 100%;
+}
 
 .spacer {
   height: 170px;
