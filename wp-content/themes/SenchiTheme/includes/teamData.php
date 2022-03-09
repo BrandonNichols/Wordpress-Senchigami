@@ -130,6 +130,17 @@ $ambassadors = [
             "tiktok" => "https://www.tiktok.com/@pixzeles"
         ]
     ],
+    "Kaela" => [
+        "image" => "$site/wp-content/uploads/2022/03/Kaela-150x150.jpg",
+        "socials" => [
+            "twitter" => "https://twitter.com/eeveexkaela",
+            "twitch" => "https://www.twitch.tv/eeveexkaela",
+            "instagram" => "https://www.instagram.com/evexkae/",
+            "discord" => "https://discord.gg/bx9CwacdUH",
+            "tiktok" => "https://www.tiktok.com/@eeveexkaela",
+            "youtube" => "https://www.youtube.com/channel/UCHJZ6umlS0RZ1S2xt6PHK"
+        ]
+    ],
     "Aereio" => [
         "image" => "$site/wp-content/uploads/2021/08/Aereio-2-edited-150x150.jpg",
         "socials" => [
