@@ -6,8 +6,7 @@
             <h1>About Us</h1>
             <p>Who is Senchigami? Who are we? Senchigami is an online apparel brand inspired by Eastern Pop Culture. 
                 You’ve probably heard something like that before, and maybe you think you know what to expect when you check us out. 
-                After all, there are a lot of brands out there ‘inspired’ by Eastern Pop Culture, but to them, it’s just a look. 
-                Senchigami was inspired by the messages and themes of the Anime, Manga and other forms of Eastern media we love.</p>
+                After all, there are a lot of brands out there ‘inspired’ by Eastern Pop Culture, but to them, it’s just a look.</p>
                 
             <br>
             <p>We’re inspired by the ideas of reaching above, giving it your all, and going even further beyond. 
